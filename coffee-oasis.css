@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;500;700&display=swap');
 
 * {
     padding:0;
@@ -12,5 +12,17 @@
 }
 
 :root {
-    --primary-color:
+    --primary-color: #03071E;
+    --button-color: #DC2F02;
+    --text-color: #f6f4f4;
+
+    --h1-fs: 45px;
+    --h2-fs:34px;
+    --p-fs: 18px;
+    --font-family: 'Archivo', sans-serif;
+    --h1-fw:700;
+    --h2-fw:500;
+    --p-fw:100
+
 }
+
