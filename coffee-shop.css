@@ -8,3 +8,13 @@
     outline:none;
     scroll-behavior: smooth;
 }
+
+.header {
+    display:flex;
+    text-align: right;
+}
+
+.navlists {
+    display:flex;
+    gap:10px
+}
