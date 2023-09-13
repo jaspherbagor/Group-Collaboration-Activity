@@ -224,9 +224,32 @@ section.home {
 /* About Section End */
 
 /* Menu Section Start */
+.menu {
+    color:var(--text-color);
+    padding:40px;
+    margin:auto
+}
 
+.menu h2 {
+    font-size:var(--h2-fs);
+    font-weight:var(--h2-fw);
+    text-align:center;
+}
 
+.menu h2 span{
+    color:var(--button-color);
+}
 
+.menu-items-container {
+    display:flexbox;
+    
+    margin-top:30px
+}
+
+.menu-items {
+    border:1px solid var(--button-color);
+    text-align:center;
+}
 
 
 /* Menu Section End */
