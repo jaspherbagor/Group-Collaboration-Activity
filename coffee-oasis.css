@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;500;700&display=swap');
 
 * {
     padding:0;
@@ -18,11 +18,127 @@
 
     --h1-fs: 45px;
     --h2-fs:34px;
+    --h3-fs:24px;
     --p-fs: 18px;
     --font-family: 'Archivo', sans-serif;
     --h1-fw:700;
     --h2-fw:500;
+    --h3-fw:300;
     --p-fw:100
+}
+
+body {
+    background:var(--primary-color)
+}
+
+.header {
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:1000;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:transparent;
+    padding:28px 11%;
+    border-bottom:1px solid transparent;
+    transition:all ease .50s;
+}
+
+
+.nav-lists {
+    display:flex;
+    gap:20px;
+}
+
+.nav-lists-a {
+    color:var(--text-color);
+    font-size:var(--p-fs)
+}
+
+.nav-lists-a:hover {
+    color:var(--button-color);
+}
+
+.logo {
+    font-size:35px;
+    color:var(--text-color);
+    font-weight:var(--h1-fw)
+}
+
+.logo span {
+    color:var(--button-color)
+}
+
+
+section {
+    padding:120px 19% 100px;
+}
+
+.home {
+    position:relative;
+    min-height:100vh;
+    width:100%;
+    background:url("bg-1.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    align-items:left;
 
 }
 
+section.home {
+    background-image:url('https://c4.wallpaperflare.com/wallpaper/315/69/166/drink-coffee-cup-coffee-beans-wallpaper-preview.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.hero-text {
+    margin:auto;
+    width:100%;
+    padding-top:60px;
+}
+
+.hero-text h1 {
+    font-family: var(--font-family);
+    font-size:var(--h1-fs);
+    color:var(--text-color);
+    font-weight:800;
+    margin-bottom:20px;
+    letter-spacing:2px;
+    text-align:left
+}
+
+.hero-text h2 {
+    font-family: var(--font-family);
+    font-size:var(--h3-fs);
+    color:var(--text-color);
+    font-weight:var(--h3-fw);
+    margin-bottom:20px;
+    letter-spacing:2px;
+    text-align:left;
+}
+
+.order-now-btn {
+    display:inline-block;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:9px 24px;
+    width:35%;
+    background-color:var(--button-color);
+    font-size:var(--p-fs);
+    font-weight:var(--h3-fw);
+    transition: all ease .50s;
+    z-index:2;
+}
+
+.order-now-btn a {
+    color:var(--text-color)
+}
+
+.order-now-btn:hover {
+    background:transparent;
+    border:2px solid var(--button-color)
+}
