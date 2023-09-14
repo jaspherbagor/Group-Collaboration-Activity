@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@200;300;500;600;700&display=swap');
+
 * {
     padding:0;
     margin:0;
@@ -7,4 +9,28 @@
     border:none;
     outline:none;
     scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #004E89;
+    --secondary-color: #FF002B;
+    --items-bg: #407BA7;
+    --header-bg: #002962;
+    --text-color: #EDF2F4;
+    
+    --font-family:'Trirong', serif;
+    --h1-fs:45px;
+    --logo-fs:29px;
+    --h2-fs:34px;
+    --h3-fs:24px;
+    --p-fs:18px;
+    --h1-fw:700;
+    --logo-fw:600;
+    --h2-fw:500;
+    --h3-fw:300;
+    --p-fw:100;
+}
+
+body {
+    background:var(--primary-color)
 }
