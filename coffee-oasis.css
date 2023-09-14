@@ -16,6 +16,7 @@
     --primary-color: #03071E;
     --button-color: #DC2F02;
     --text-color: #f6f4f4;
+    --menu-items-bg:#E85D04;
 
     --h1-fs: 45px;
     --h2-fs:34px;
@@ -258,6 +259,12 @@ section.home {
     text-align:center;
 }
 
+.menu-items:hover {
+    background:var(--primary-color);
+    box-shadow: 10px 5px 5px var(--button-color);
+    transform:scale(1.05)
+}
+
 .menu-items img {
     width:350px;
     height:300px;
@@ -279,6 +286,18 @@ section.home {
 
 .menu-items button {
     margin-bottom:20px
+}
+
+.current-price {
+    margin-right:5px;
+    color:var(--button-color)
+}
+
+.original-price {
+    text-decoration:line-through;
+    font-size:15px;
+    font-weight:var(--p-fw);
+    margin-right:5px
 }
 
 /* Menu Section End */
