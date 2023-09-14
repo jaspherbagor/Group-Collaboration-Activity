@@ -251,7 +251,6 @@ section.home {
     margin-top:30px;
     width:100%;
     justify-content:center;
-
 }
 
 .menu-items {
@@ -299,5 +298,8 @@ section.home {
     font-weight:var(--p-fw);
     margin-right:5px
 }
-
 /* Menu Section End */
+
+/* Review Section Start */
+
+/* Review Section End */
