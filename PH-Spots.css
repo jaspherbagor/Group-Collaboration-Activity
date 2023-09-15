@@ -1,22 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Trirong:wght@200;300;500;600;700&display=swap');
 
-* {
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-    list-style:none;
-    text-decoration: none;
-    border:none;
-    outline:none;
-    scroll-behavior: smooth;
-}
 
 :root {
-    --primary-color: #004E89;
-    --secondary-color: #FF002B;
-    --items-bg: #407BA7;
-    --header-bg: #002962;
-    --text-color: #EDF2F4;
+    --primary-color: #F3FFC6;
+    --secondary-color: #B6174B;
+    --section-bg: #407BA7;
+    --header-bg: #306B34;
+    --text-color: #fff;
+    --items-bg: #128a1a;
     
     --font-family:'Trirong', serif;
     --h1-fs:45px;
@@ -31,6 +22,187 @@
     --p-fw:100;
 }
 
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration: none;
+    border:none;
+    outline:none;
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+}
+
 body {
+    background:var(--section-bg)
+}
+
+section {
+    padding:120px 19% 100px;
+}
+
+/* Header Section Start */
+.header {
+    position:fixed;
+    top:0;
+    right:0;
+    z-index:1000;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:transparent;
+    padding:15px 11%;
+    border-bottom:1px solid transparent;
+    transition:all ease .50s;
+    background: var(--header-bg);
+    opacity:0.9
+}
+
+
+.nav-lists {
+    display:flex;
+    gap:20px;
+}
+
+.nav-lists-a {
+    color:var(--text-color);
+    font-size:var(--p-fs)
+}
+
+.nav-lists-a:hover {
+    color:var(--secondary-color);
+    border:1px solid var(--secondary-color);
+    padding:15px;
     background:var(--primary-color)
 }
+
+.logo {
+    font-size:var(--logo-fs);
+    color:var(--text-color);
+    font-weight:var(--logo-fw)
+}
+
+.logo span {
+    color:var(--secondary-color)
+}
+/* Header Section End */
+
+/* Home Section Start */
+.home {
+    padding:30px;
+    margin:auto;
+    text-align:left;
+    background-image:url(./bg-img-3.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    height:100vh;
+    color:var(--text-color)
+}
+
+.hero-text {
+    margin-top:160px;
+    padding:40px;
+    width:60vw
+}
+
+.hero-text h1 {
+    font-size:var(--h1-fs);
+    font-weight:var(--h1-fw);
+
+}
+
+.hero-text h3 {
+    font-size:var(--h3-fs);
+    font-weight:var(--h3-fw)
+}
+
+
+.btn {
+    display:inline-block;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:9px 24px;
+    width:250px;
+    background-color:var(--secondary-color);
+    font-size:var(--p-fs);
+    font-weight:var(--h3-fw);
+    transition: all ease .50s;
+    z-index:2;
+}
+
+.btn a {
+    color:var(--text-color)
+}
+
+.btn:hover {
+    background:transparent;
+    border:2px solid var(--secondary-color)
+}
+
+/* Home Section End */
+
+/* Luzon Section Start */
+.luzon {
+    padding:20px;
+    margin:20px auto auto auto;
+    text-align:center;
+    color:var(--text-color)
+}
+
+.luzon h2 {
+    font-size:var(--h2-fs);
+    font-weight:var(--h1-fw);
+    margin-top:30px;
+}
+
+.luzon-items-container {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row wrap;
+    gap:20px;
+    margin-top:30px;
+    width:100%;
+    justify-content:center;
+}
+
+.luzon-items {
+    border:.5px solid var(--secondary-color);
+    text-align:center;
+    background:var(--items-bg);
+    width:360px;
+    border-radius:3px
+}
+
+.luzon-items:hover {
+    background:var(--primary-color);
+    box-shadow: 10px 5px 5px var(--secondary-color);
+    transform:scale(1.05);
+    color:var(--section-bg);
+}
+
+.luzon-items img {
+    width:350px;
+    height:300px;
+    margin:5px;
+    border:2px solid var(--primary-color);
+    border-radius:3px;
+}
+
+.luzon-items h3 {
+    font-size:var(--h3-fs);
+    font-weight:var(--h3-fw);
+    padding-bottom:10px;
+    color:var(--secondary-color);
+}
+
+.luzon-items p {
+    font-size:var(--p-fs);
+    font-weight:var(--p-fw);
+    margin-bottom:10px
+}
+/* Luzon Section End */
+
