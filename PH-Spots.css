@@ -7,7 +7,7 @@
     --section-bg: #407BA7;
     --header-bg: #306B34;
     --text-color: #fff;
-    --items-bg: #128a1a;
+    --items-bg: #409f46;
     
     --font-family:'Trirong', serif;
     --h1-fs:45px;
@@ -157,6 +157,7 @@ section {
     font-size:var(--h2-fs);
     font-weight:var(--h1-fw);
     margin-top:30px;
+    padding-top:50px;
 }
 
 .luzon-items-container {
@@ -179,8 +180,8 @@ section {
 
 .luzon-items:hover {
     background:var(--primary-color);
-    box-shadow: 10px 5px 5px var(--secondary-color);
-    transform:scale(1.05);
+    box-shadow: 10px 10px 10px var(--secondary-color);
+    transform:scale(1.10);
     color:var(--section-bg);
 }
 
@@ -206,3 +207,132 @@ section {
 }
 /* Luzon Section End */
 
+/* Visayas Section Start */
+.visayas {
+    padding:20px;
+    margin:20px auto auto auto;
+    text-align:center;
+    color:var(--text-color)
+}
+
+.visayas h2 {
+    font-size:var(--h2-fs);
+    font-weight:var(--h1-fw);
+    margin-top:30px;
+    padding-top:50px;
+}
+
+.visayas-items-container {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row wrap;
+    gap:20px;
+    margin-top:30px;
+    width:100%;
+    justify-content:center;
+}
+
+.visayas-items {
+    border:.5px solid var(--secondary-color);
+    text-align:center;
+    background:var(--items-bg);
+    width:360px;
+    border-radius:3px
+}
+
+.visayas-items:hover {
+    background:var(--primary-color);
+    box-shadow: 10px 5px 5px var(--secondary-color);
+    transform:scale(1.10);
+    color:var(--section-bg);
+}
+
+.visayas-items img {
+    width:350px;
+    height:300px;
+    margin:5px;
+    border:2px solid var(--primary-color);
+    border-radius:3px;
+}
+
+.visayas-items h3 {
+    font-size:var(--h3-fs);
+    font-weight:var(--h3-fw);
+    padding-bottom:10px;
+    color:var(--secondary-color);
+}
+
+.visayas-items p {
+    font-size:var(--p-fs);
+    font-weight:var(--p-fw);
+    margin-bottom:10px
+}
+/* Visayas Section End */
+
+/* Mindanao Section Start */
+.mindanao {
+    padding:20px;
+    margin:20px auto auto auto;
+    text-align:center;
+    color:var(--text-color)
+}
+
+.mindanao h2 {
+    font-size:var(--h2-fs);
+    font-weight:var(--h1-fw);
+    margin-top:30px;
+    padding-top:50px;
+}
+
+.mindanao-items-container {
+    /* display:flex;
+    flex-wrap: wrap;
+    flex-direction:row wrap; */
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 100%;
+    overflow: hidden;
+    gap:20px;
+    margin-top:30px;
+    width:100%;
+    height:auto;
+    justify-content:center;
+    padding:30px
+}
+
+.mindanao-items {
+    border:.5px solid var(--secondary-color);
+    text-align:center;
+    background:var(--items-bg);
+    width:360px;
+    border-radius:3px
+}
+
+.mindanao-items:hover {
+    background:var(--primary-color);
+    box-shadow: 10px 5px 5px var(--secondary-color);
+    transform:scale(1.10);
+    color:var(--section-bg);
+}
+
+.mindanao-items img {
+    width:350px;
+    height:300px;
+    margin:5px;
+    border:2px solid var(--primary-color);
+    border-radius:3px;
+}
+
+.mindanao-items h3 {
+    font-size:var(--h3-fs);
+    font-weight:var(--h3-fw);
+    padding-bottom:10px;
+    color:var(--secondary-color);
+}
+
+.mindanao-items p {
+    font-size:var(--p-fs);
+    font-weight:var(--p-fw);
+    margin-bottom:10px
+}
+/* Mindanao Section End */
